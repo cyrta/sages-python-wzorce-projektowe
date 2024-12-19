@@ -45,9 +45,16 @@ from datetime import datetime
 from typing import Final
 
 
+class Transaction:
+    pass
+
+class History:
+    pass
+
 @dataclass
 class Account:
     balance: float = 0.0
+    history: History = field(default_factory=History)
 
     def deposit(self, amount: float) -> None:
         raise NotImplementedError

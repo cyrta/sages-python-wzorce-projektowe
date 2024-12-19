@@ -20,7 +20,7 @@ class Circle(Shape):
 
 @dataclass
 class Group(Shape):
-    children: list = field(default_factory=list)
+    children: list[Shape] = field(default_factory=list)
 
     def add(self, graphic):
         self.children.append(graphic)
