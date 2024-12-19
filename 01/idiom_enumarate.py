@@ -40,5 +40,5 @@ Tests:
 DATA = ['setosa', 'versicolor', 'virginica']
 
 # Dict with enumerated DATA
-# type: dict[int,sresult = ...
+# type: dict[int,result = ...
 
