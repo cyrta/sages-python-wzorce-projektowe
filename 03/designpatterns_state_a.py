@@ -38,6 +38,7 @@ Tests:
     >>> chinese.goodbye()
     '再见'
 """
+from abc import abstractmethod
 from enum import Enum
 
 
@@ -45,6 +46,7 @@ class Language(Enum):
     POLISH = 'pl'
     ENGLISH = 'en'
     SPANISH = 'es'
+
 
 
 class Translation:
@@ -72,4 +74,8 @@ class Translation:
             return 'Adiós'
         else:
             return 'Unknown language'
+
+
+
+
 
